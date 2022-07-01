@@ -1,27 +1,38 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
-    "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"
-    xmlns:foaf="http://xmlns.com/foaf/0.1/"
-    xmlns:dc="http://purl.org/dc/elements/1.1/"
-    version="XHTML+RDFa 1.0" xml:lang="en">
+<html amp>
   <head>
-    <title>John's Home Page</title>
-    <base href="http://example.org/john-d/" />
-    <meta property="dc:creator" content="Jonathan Doe" />
-    <link rel="foaf:primaryTopic" href="http://example.org/john-d/#me" />
+    <title>Article headline</title>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NewsArticle",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://google.com/article"
+      },
+      "headline": "Article headline",
+      "image": [
+        "https://example.com/photos/1x1/photo.jpg",
+        "https://example.com/photos/4x3/photo.jpg",
+        "https://example.com/photos/16x9/photo.jpg"
+      ],
+      "datePublished": "2015-02-05T08:00:00+08:00",
+      "dateModified": "2015-02-05T09:20:00+08:00",
+      "author": {
+        "@type": "Person",
+        "name": "John Doe",
+        "url": "http://example.com/profile/johndoe123"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Google",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://google.com/logo.jpg"
+        }
+      }
+    }
+    </script>
   </head>
-  <body about="http://example.org/john-d/#me">
-    <h1>John's Home Page</h1>
-    <p>My name is <span property="foaf:nick">John D</span> and I like
-      <a href="http://www.neubauten.org/" rel="foaf:interest"
-        xml:lang="de">Einstürzende Neubauten</a>.
-    </p>
-    <p>
-      My <span rel="foaf:interest" resource="urn:ISBN:0752820907">favorite
-      book is the inspiring <span about="urn:ISBN:0752820907"><cite
-      property="dc:title">Weaving the Web</cite> by
-      <span property="dc:creator">Tim Berners-Lee</span></span></span>.
-    </p>
+  <body>
   </body>
 </html>
