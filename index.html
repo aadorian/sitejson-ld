@@ -1,36 +1,27 @@
-<html>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
+    "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    version="XHTML+RDFa 1.0" xml:lang="en">
   <head>
-    <title>Apple Pie by Grandma</title>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org/",
-      "@type": "Recipe",
-      "name": "Apple Pie by Grandma",
-      "author": "Elaine Smith",
-      "image": "http://images.edge-generalmills.com/56459281-6fe6-4d9d-984f-385c9488d824.jpg",
-      "description": "A classic apple pie.",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.8",
-        "reviewCount": "7462",
-        "bestRating": "5",
-        "worstRating": "1"
-      },
-      "prepTime": "PT30M",
-      "totalTime": "PT1H30M",
-      "recipeYield": "8",
-      "nutrition": {
-        "@type": "NutritionInformation",
-        "calories": "512 calories"
-      },
-      "recipeIngredient": [
-        "1 box refrigerated pie crusts, softened as directed on box",
-        "6 cups thinly sliced, peeled apples (6 medium)"
-      ]
-    }
-    </script>
+    <title>John's Home Page</title>
+    <base href="http://example.org/john-d/" />
+    <meta property="dc:creator" content="Jonathan Doe" />
+    <link rel="foaf:primaryTopic" href="http://example.org/john-d/#me" />
   </head>
-  <body>
-    JSON-LD
+  <body about="http://example.org/john-d/#me">
+    <h1>John's Home Page</h1>
+    <p>My name is <span property="foaf:nick">John D</span> and I like
+      <a href="http://www.neubauten.org/" rel="foaf:interest"
+        xml:lang="de">Einstürzende Neubauten</a>.
+    </p>
+    <p>
+      My <span rel="foaf:interest" resource="urn:ISBN:0752820907">favorite
+      book is the inspiring <span about="urn:ISBN:0752820907"><cite
+      property="dc:title">Weaving the Web</cite> by
+      <span property="dc:creator">Tim Berners-Lee</span></span></span>.
+    </p>
   </body>
 </html>
